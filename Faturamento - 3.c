@@ -19,11 +19,11 @@ int main(){
             maior=vet[i];
     }
     for(i=0;i<30;i++){
-        if (vet[i]>soma/30 && vet[i]!=0)
+        if (vet[i]>soma/(30-dias0) && vet[i]!=0)
             diasmaior++;
     }
     
-    printf("O maior dia de faturamento foi: R$%f\nO menor dia de faturamento foi(com exceção de 0): R$%f\nDias em que o faturamento foi maior que a média mensal: %d", maior, menor, diasmaior);
+    printf("O maior valor de faturamento foi: R$%f\nO menor valor de faturamento foi(com exceção de R$0): R$%f\nDias em que o faturamento foi maior que a média mensal: %d", maior, menor, diasmaior);
 
     return 0;
 }
